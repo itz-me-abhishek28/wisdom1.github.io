@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WISDOM.COM</title>
+<link rel="icon" type="image/x-icon" href="wisdom.jpg">
+<style>
+*
+{ margin:0;
+padding:0;}
+body
+{
+    background-color: white;
+    overflow-x: hidden;
+    text-overflow: hidden;
+  
+}
+h2
+{
+ background-color:deepskyblue;
+height:50px;
+text-align:center;
+padding:30px;
+font-size:35px;
+position: sticky;
+width: 100%;
+
+}
+h3
+{
+    font-size: 35px;
+    font-family: cooper black;
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+.img1
+{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+.UL1
+{
+    background-color: black;
+    list-style-type: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+
+
+   }
+.UL1 li 
+{
+    display: inline-block;
+    padding: 14px 46px;
+    border-right: 2px solid white;
+
+}
+.UL1 li a 
+{
+    color: white;
+    text-decoration: none;
+    z-index: 2;
+    font-size: 19px;
+
+}
+.UL1 li:hover
+{
+    background-color: deepskyblue;
+}
+.img2
+{
+   height: 200px;
+    width: 200px;
+    margin-left: 10PX;
+    border-radius: 600px;
+   
+    border: 2px solid deepskyblue;
+    transition: 0.5s;
+
+}
+
+.img3
+{
+    height: 200px;
+    width: 200px;
+    margin-left: 10PX;
+    border-radius: 600px;
+    
+    border: 2px solid deepskyblue;
+    transition: 0.5s;
+
+}
+.img4
+{
+    border-radius: 600px;
+    height: 200px;
+    width: 200px;
+    
+    transition: 0.5s;
+
+    border: 2px solid deepskyblue;
+}
+.img5
+{
+    border-radius: 600px;
+    height: 200px;
+    width: 200px;
+    
+    transition: 0.5s;
+
+    border: 2px solid deepskyblue;
+}
+.img6
+{
+    border-radius: 600px;
+    height: 200px;
+    width: 200px;
+   
+    transition: 0.5s;
+
+    border: 2px solid deepskyblue;
+}
+.img6:hover
+{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.img2:hover
+{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.img3:hover
+{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.img4:hover
+{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.img5:hover
+{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+
+h4
+{
+    font-size: 20px;
+}
+marquee
+{
+    height: 50px;
+    font-size: 30px;
+    background-color: deepskyblue;
+    color: black;
+    position: relative;
+  display: flex;
+    width: 104%;
+    overflow: hidden;
+}
+.active
+{
+    background-color: deepskyblue;
+}
+.pro1
+{
+    background-color: white;
+    width: 250px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+    height: 250px;
+    text-align: center;
+}
+.pro2
+{
+    background-color: white;
+    width: 250px;
+    position: relative;
+    top: -216px;
+    left: 300px;
+    text-align: center;
+    height: 250px;
+}
+.pro3
+{
+    background-color: white;
+    width: 250px;
+    position: relative;
+    top: -483px;
+    left: 590px;
+    height: 250px;
+    text-align: center;
+}
+.pro4
+{
+    background-color: white;
+    width: 250px;
+    position: relative;
+    top: -750px;
+    left: 890px;
+    height: 250px;
+    text-align: center;
+}
+.pro5
+{
+    background-color: white;
+    width: 250px;
+    position: relative;
+    top: -1020px;
+    left: 1190px;
+    height: 250px;
+    text-align: center;
+}
+#p1
+{
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    top: -200px;
+    width: 150px;
+    transition: 0.4s;
+}
+.pro1:hover #p1
+{
+    background-color: grey;
+    color: black;
+    width: 250px;
+    opacity: 1;
+     position: relative;
+    top: 0px;
+    padding: 7px;
+    height: 50px;
+}
+#p2
+{
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    top: -200px;
+    width: 150px;
+    transition: 0.4s;
+}
+.pro2:hover #p2
+{
+    background-color: grey;
+    color: black;
+    width: 250px;
+    opacity: 1;
+     position: relative;
+    top: -0px;
+    padding: 7px;
+    height: 50px;
+}
+#p3
+{
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    top: -200px;
+    width: 150px;
+    transition: 0.4s;
+}
+.pro3:hover #p3
+{
+    background-color: grey;
+    color: black;
+    width: 250px;
+    opacity: 1;
+     position: relative;
+    top: 0px;
+    padding: 7px;
+    height: 50px;
+}
+#p4
+{
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    top: -200px;
+    width: 150px;
+    transition: 0.4s;
+}
+.pro4:hover #p4
+{
+    background-color: grey;
+    color: black;
+    width: 250px;
+    opacity: 1;
+     position: relative;
+    top: 0px;
+    padding: 7px;
+    height: 50px;
+}
+#p5
+{
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    top: -200px;
+    width: 150px;
+    transition: 0.4s;
+}
+.pro5:hover #p5
+{
+    background-color: grey;
+    color: black;
+    width: 250px;
+    opacity: 1;
+     position: relative;
+    top: 0px;
+    padding: 7px;
+    height: 50px;
+
+}
+.adv
+{
+    position: relative;
+    top: -850px;
+}
+#ad
+{
+    height: 700px;
+    width: 520px;
+    position: relative;
+    top: -50px;
+    left: 50px;
+    transition: 0.5s;
+    background-image: url(a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ad:hover
+{
+    transform: translateX(50px) scale(1.1) ;
+    box-shadow: -40px 1px 30px darkgoldenrod;
+}
+#img1
+{
+    width:1300px;
+    height: 500px;
+    opacity: 0.4;
+    position: relative;
+    left: 170px;
+}
+#head
+{
+    font-size: 30px;
+    font-family: cooper black;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
+}
+#header
+{
+    height: 500px;
+    width: 950px;
+    text-align: justify;
+    font-size: 30px;
+    position: absolute;
+    top: 340px;
+    left: 300px;
+}
+#spl
+{
+    position: absolute;
+    top: 1200px;
+    left: 630px;
+    height: 600px;
+    width: 800px;
+    font-size: 35px;
+    
+    margin: auto;
+    padding: 15px 20px;
+}
+#key
+{
+    font-size: 35px;
+    font-family: impact;
+}
+#ad2
+{
+    position: relative;
+    top: 120px;
+    float: right;
+
+}
+#spl1
+{
+    position: relative;
+    top: -600px;
+    left: -750px;
+    width: 700px;
+    font-size: 35px;
+
+}
+#spl2
+{
+    position: relative;
+    top: -600px;
+    left: 700px;
+    width: 700px;
+    font-size: 35px;
+
+}
+#ad3
+{
+    position: relative;
+    top: 900px;
+    left: 50px; 
+}
+#ad4
+{
+    position: relative;
+    top: 500px;
+    left: 700px;
+   float: right; 
+}
+#spl3
+{
+    position: relative;
+    top: -600px;
+    left:-730px;
+    width: 700px;
+    font-size: 35px;
+
+}
+.pam1:hover
+{
+    transform: translateX(-40px) scale(1.1) ;
+    box-shadow: 40px 1px 30px darkgoldenrod;
+}
+.pam2:hover
+{
+    transform: translateX(50px) scale(1.1) ;
+    box-shadow: -40px 1px 30px darkgoldenrod;
+}
+.pam3:hover
+{
+    transform: translateX(-40px) scale(1.1) ;
+    box-shadow: 40px 1px 30px darkgoldenrod;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<h2>WISDOM  GLOBE    EDUCATION</h2>
+<img src="wisdom.jpg" class="img1" >
+<nav id="top-nav" class="NAV1"><ul class="UL1">
+<li class="link active"><a href="C:\Users\Abhishek\Desktop\abhi.html">HOME</a></li>
+<li class="link"><a href="C:\Users\Abhishek\Desktop\about.html">ABOUT</a></li>
+<li class="link"><a href="C:\Users\Abhishek\Desktop\courses.html">COURSES</a></li>
+<li class="link"><a href="#">ADDMISSION</a></li>
+<li class="link"><a href="#">FEEDBACK</a></li></ul></nav>
+
+<marquee >Welcome to our education page. <a href="#">Click here for apply new admission.</a></marquee>
+<div id="intro"><img src="b.jpg" id="img1"> <h3 id="head">WELCOME TO OUR EDUCATION WEBSITE </h3>
+    <br>
+    <div id="header"><b><i>
+At Wisdom, We are dedicated to providing comprehensive and accessible educational resources for learners of all ages and backgrounds. Our platform is designed to empower students, educators, and lifelong learners with the knowledge and tools they need to succeed in their educational journey. Whether you're a student looking to excel in your studies, a teacher seeking innovative teaching strategies, or an individuals eager to expand your knowledege, our website is here to support and inspire you.</b></i></div></div>
+<h3>Teacher's</h3>
+<br>
+<div class="pro"><div class="pro1"><img class="img2" src="1.jpg"> <br> <h4 >GAURAV KASHYAP</h4> <p id="p1"><b>B.TECH In ECE</b> <br> 20 Year working Expierence</p> </div>
+<br>
+<br>
+
+<div class="pro2"><img class="img3" src="1.jpg"> <br> <h4 >  OMKAR  KAUSHIK</h4> <p id="p2"><b>B.COM</b> <br> 20 Year working Expierence</p></div>
+<br>
+<div class="pro3"><img class="img4" src="wisdom.jpg"> <br> <h4 >JYOTI RAUTELA</h4> <p id="p3"><b>B.Sc (Chemistry), M.Sc (Chemistry)</b> <br> 10 Year working Expierence</p></div>
+<br>
+<div class="pro4"><img class="img5" src="wisdom.jpg"> <br> <h4 >ANKUR </h4><p id="p4"><b>B.Sc (Chemistry), M.Sc (Chemistry), PHD</b> <br> 15 Year working Expierence</p></div>
+<br>
+<div class="pro5"><img class="img6" src="wisdom.jpg"> <br> <h4 >Shivani  </h4><p id="p5"><b>B.Sc (Biology), M.Sc (Biology) </b><br> 10 Year working Expierence</p></div></div>
+<br>
+
+<div id="spl"><h4 id="key">Key Features of Wisdom Globe</h4>  <br><p><b>1. Vast Learning Resources :</b> Our website offers a wide array of learning materials, including articles,videos, tutorials, interactive quizzes, and more. Covering various subjects and disciplines, we aim to to cater to the diverse needs of learners at different levels. <br> <br> <b>2. Student Support :</b> We understand the challenges that students face, and that's why we provide tips, study guides, and expert advice to help learners achieve academic success. From exam preaparation to time management, we've got you covered.</p></div>
+<div class="adv">
+<div id="ad"> </div>
+<div id="ad2"><img src="d.jpg" class="pam1" style="width: 650px; transition: 0.4s; height: 700px;"> <br> <div id="spl1"><p><b>3. Teacher's Corner :   </b> Educators play a vital role in shaping minds, so we have a dedicated section to support teachers in their profession. We offer lesson plans, classroom acitivities, professional development resources, and innovative teaching methodologies to enhance the learning experience for their students. <br> <br><b>4. Lifelong Learning:</b> Learning is a lifelong journey, and we believe in fostering a passion for continous education. Our website offers courses and resources for adult learners
+who seek personal development or professional advancement. </p></div></div>
+<div id="ad3"><img src="e.jpg" class="pam2" style="width: 600px; transition: 0.4s;  height: 700px;"> <br> <div id="spl2"><p><b>5. Career Guidance:   </b>For students planning their future career paths, we offer valuable insights into different professions, educational pathways, and tips on building a successful career. <br> <br> <b>6. Latest Educational Trends:</b>We keep our content up-to-date with the latest educational trends and advancements. Whether it's incorporating technology in the classroom or exploring new teaching methodologies, we strive to stay ahead in the educational landscape.</p></div></div>
+<div id="ad4"><img src="ca.jpg" class="pam3" style="width: 650px; height: 700px; transition: 0.4s; "> <br> <div id="spl3"><p><b>7. Teacher's Corner :   </b> Educators play a vital role in shaping minds, so we have a dedicated section to support teachers in their profession. We offer lesson plans, classroom acitivities, professional development resources, and innovative teaching methodologies to enhance the learning experience for their students. <br> <br><b>8. Lifelong Learning:</b> Learning is a lifelong journey, and we believe in fostering a passion for continous education. Our website offers courses and resources for adult learners
+who seek personal development or professional advancement. </p></div></div></div>
+
+
+
+
+
+
+<script type="text/javascript">
+    var header = document.getElementById("top-nav");
+    var btns = header.getElementsByClassName("link");
+    for (var i = 0; i < btns.length; i++){
+        btns[i].addEventListener("click", function () 
+        {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+
+</body>
+</html>

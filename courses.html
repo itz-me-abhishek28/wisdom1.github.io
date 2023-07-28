@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*
+{ margin:0;
+padding:0;}
+body
+{
+    background-color: white;
+    overflow-x: hidden;
+    text-overflow: hidden;
+  
+}
+h2
+{
+ background-color:deepskyblue;
+height:50px;
+text-align:center;
+padding:30px;
+font-size:35px;
+position: sticky;
+width: 100%;
+
+}
+.img1
+{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+.UL1
+{
+    background-color: black;
+    list-style-type: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+
+
+   }
+.UL1 li 
+{
+    display: inline-block;
+    padding: 14px 46px;
+    border-right: 2px solid white;
+
+}
+.UL1 li a 
+{
+    color: white;
+    text-decoration: none;
+    z-index: 2;
+    font-size: 19px;
+
+}
+.UL1 li:hover
+{
+    background-color: deepskyblue;
+}
+marquee
+{
+    height: 50px;
+    font-size: 30px;
+    background-color: deepskyblue;
+    color: black;
+    position: relative;
+  display: flex;
+    width: 104%;
+    overflow: hidden;
+}
+.active
+{
+    background-color: deepskyblue;
+}
+/*common part*/
+.soon
+{
+	font-size: 40px;
+	position: relative;
+	top: 350px;
+	left: 600px;
+	font-family: cooper black;
+}
+</style>
+</head>
+<body>
+	<h2>WISDOM GLOBE EDUCATION</h2>
+<img src="wisdom.jpg" class="img1" >
+<nav id="top-nav" class="NAV1"><ul class="UL1">
+<li class="link "><a href="C:\Users\Abhishek\Desktop\abhi.html">HOME</a></li>
+<li class="link "><a href="C:\Users\Abhishek\Desktop\about.html">ABOUT</a></li>
+<li class="link active"><a href="C:\Users\Abhishek\Desktop\courses.html">COURSES</a></li>
+<li class="link"><a href="#">ADDMISSION</a></li>
+<li class="link"><a href="#">FEEDBACK</a></li></ul></nav>
+
+<marquee >Welcome to our education page. <a href="#">Click here for apply new admission.</a></marquee>
+<script type="text/javascript">
+    var header = document.getElementById("top-nav");
+    var btns = header.getElementsByClassName("link");
+    for (var i = 0; i < btns.length; i++){
+        btns[i].addEventListener("click", function () 
+        {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+<!---<div> common part </div>-->
+<div class="soon"><p><b><i>COMING SOON.....</i></b></p></div>
+
+</body>
+</html>
